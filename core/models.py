@@ -7,3 +7,5 @@ class Persona(models.Model):
     cedula = models.CharField(max_length=10, unique=True)
     correo = models.EmailField(max_length=100)
     edad = models.IntegerField(default=18)
+    fecha_nacimiento = models.DateField()
+    
